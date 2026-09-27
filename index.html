@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloneBMW</title>
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caacupe+One&family=Doppio+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+</head>
+
+<body style="margin: 0;height: 100%;">
+
+  <!-- header -->
+    <section class="relative  h-screen w-full bg-black " style="height: 91vh;">
+      <div>
+    <div class=" bg-cover inset-0 bg-no-repeat"
+        style="background-image: url('./Img/G70_banner_16to7.webp'); height: 91vh;">
+        
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black via-black/2  w-full md:w-2/4 lg:w-2/5 "></div>
+        <div class="absolute pt-3" style="width: 100%;" > 
+
+
+          <div class="max-w-screen-xl flex flex-row " style="width: 100%;padding-bottom: 10px;">
+          <a href="" style="padding-left: 93px;" class="flex items-center ">
+                      <img src="./Img/logo.png" alt="" width="65px">
+                      
+                    </a>
+                    
+                <nav class="w-full  z-20 top-0 start-0" >
+                  
+                    
+                    <div class=" hidden w-full md:block md:w-auto" id="navbar-solid" style="padding-left: 30px;padding-top: 15px;">
+                      <ul class="flex font-medium   md:p-0  border border-default  b md:flex-row md:space-x-5 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-secondary-soft">
+                        <li>
+                          <a href="#" style="font-weight: 600;" class=" fs-1 block py- px- text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">All Models</a>
+                          <div class="w-full border-b-2 border-transparent group-hover:border-blue-500 mt-1"></div>
+                        </li>
+                        <li>
+                          <a href="#" style="font-weight: 600;" class="fs-1 block py- px- text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Electric</a>
+                        </li>
+                        <li>
+                          <button style="font-weight: 600;" id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="flex fs-1 block py- px- text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent" type="button">
+                            Visit Online Shop
+                            <svg  class=" ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox=""><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="" d="m19 9-7 7-7-7"/></svg>
+                          </button>
+
+<!-- Dropdown menu -->
+<div id="dropdown"  class="z-10 hidden bg-white border border-default-medium rounded-base shadow-lg w-full ">
+  
+    <ul class=" text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton" style="margin-left: 80px;padding-top: 60px;padding-bottom: 100px;">
+      <h1 class=" inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: x-large;font-weight: 300;padding-bottom: 40px;" >Shop Online</h1>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: medium;font-weight: 100;">Buy New Vehicle</a>
+      </li>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: medium;font-weight: 100;">Configure Your Own</a>
+      </li>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: medium;font-weight: 100;">Current Offers</a>
+      </li>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size:medium;font-weight: 100;">BMW Connected Drive Store</a>
+      </li>
+    </ul>
+</div>
+
+
+
+        <!-- <a href="#" class="fs-1 block py-2 px-3 text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Visit Online Shop</a> -->
+        </li>
+        <li>
+          <button style="font-weight: 600;" id="dropdownDefaultButton1" data-dropdown-toggle="dropdown1" class="flex fs-1 block py- px- text-white rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent" type="button">
+  More BMW
+  <svg  class=" ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox=""><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="" d="m19 9-7 7-7-7"/></svg>
+</button>
+
+<!-- Dropdown menu -->
+<div id="dropdown1"  class="z-10 hidden bg-white border border-default-medium rounded-base shadow-lg w-full ">
+  
+    <ul class=" text-sm text-body font-medium" aria-labelledby="dropdownDefaultButton1" style="margin-left: 80px;padding-top: 60px;padding-bottom: 100px;">
+      <h1 class=" inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: x-large;font-weight: 300;padding-bottom: 40px;" >BMW ALPINA</h1>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: medium;font-weight: 100;">  </a>
+      </li>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: medium;font-weight: 100;">  </a>
+      </li>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size: medium;font-weight: 100;"> </a>
+      </li>
+      <li>
+        <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded" style="font-size:medium;font-weight: 100;">   </a>
+      </li>
+    </ul>
+</div>
+        </li>
+        <div class="flex  gap-6" style="padding-left: 29.5%;">
+        <svg  style="width: 20px;color:white"  xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="navbar-icon" >
+  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+  <circle cx="12" cy="7" r="4" />
+</svg>
+        <svg style="width: 20px;color:white" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="navbar-icon">
+  <circle cx="9" cy="21" r="1" />
+  <circle cx="20" cy="21" r="1" />
+  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+</svg>
+
+<svg style="width: 20px;color:white" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="navbar-icon">
+  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+</svg>
+
+<svg style="width: 20px;color:white"  xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="navbar-icon">
+  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+  <circle cx="12" cy="10" r="3" />
+</svg>
+      </div>
+      </ul>
+      
+      
+    </div>
+    
+  </div>
+  <div class="mx-24 border-t border-white border-1" ></div>
+
+
+  <div class="pt-1 " style="margin-left: 100px;">
+    <h1 class="text-white" style="font-size: medium; font-weight: 200;"><span class="pe-3">T H E</span><span class="ps-3 pe-3">N E W</span><span class="ps-3">B M W</span> </h1>
+    <h1 class="text-white" style="margin: 0; line-height: 0.9;font-size: 220px;font-weight: 290;">7</h1>
+    <p class="text-white" style="font-size: 25px;font-weight: 220;">BMW 7 Series Sedan</p>
+    <p class="text-white" style="font-size: 21px;font-weight: 280;">Price starting at ₹1,95,00,000*</p>
+    <div class="pt-4 ps-1">
+      <button type="button" class=" outline-1 outline-1  text-white  border-1 border-transparent hover:border-white font-medium rounded-sm text- px-9 py-3 hover:outline-white" style="cursor: pointer;">Know more</button>
+      </div>
+    </div>
+</nav>
+
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- contents -->
+<section>
+    <div>
+      <h2 class="text-center" style="font-size: 38px;font-weight: 250;padding-top: 40px;padding-bottom: 40px;">Find your BMW.</h2>
+    </div>
+    
+    <div class="flex justify-around ">
+    <div style="padding-left: 0px;">
+      <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_180,h_135,q_auto,c_fill,f_auto,fl_lossy/auto-titan/25d969749be967b08f549f9c9b0bb3f4/4_3_icon01.jpg" width="100px" alt="">
+     
+    </div>
+    <div>
+      <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_180,h_135,q_auto,c_fill,f_auto,fl_lossy/auto-titan/9ab32bd86831f3ed713797e23e89c911/4_3_icon02.jpg" width="100px" alt="">
+      
+    </div>
+    <div>
+      <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/w_180,h_135,q_auto,c_fill,f_auto,fl_lossy/auto-titan/b02c5326c760e99f3e710f9a089694c1/microsoftteams_image_9_.png" width="85px" alt="">
+      
+    </div>
+  </div>
+
+  <div class="flex justify- justify-around pt-4">
+    <div>
+       <p style="font-size: 25px;font-weight: 250;">Find a new car.</p>
+    </div>
+    <div>
+       <p style="font-size: 25px;font-weight: 250;">Book a test drive.</p>
+    </div>
+    <div>
+       <p style="font-size: 25px;font-weight: 250;">Build your own.</p>
+    </div>
+  </div>
+
+  <div class="flex  justify-around pt-5" style="padding-bottom: 50px;">
+    <div>
+      <button type="button" class=" outline-1 outline-1  text-black  border-1 border-transparent hover:border-black font-medium rounded-sm text- px-5 py-3 hover:outline-black" style="cursor: pointer;">Search now</button>
+    </div>
+    <div>
+      <button type="button" class=" outline-1 outline-1  text-black  border-1 border-transparent hover:border-black font-medium rounded-sm text- px-5  hover:outline-black" style="cursor: pointer;">Request a test<br>drive</button>
+    </div>
+    <div>
+      <button type="button" class=" outline-1 outline-1  text-black  border-1 border-transparent hover:border-black font-medium rounded-sm text- px-5  hover:outline-black" style="cursor: pointer;">Configure &<br>prize</button>
+    </div>
+  </div>
+</section>
+
+
+<!--  -->
+
+<section class="flex-col  relative  h-screen w-full">
+  <div style="padding-bottom: 40px;">
+  <div class="relative  inset-0 "
+        style="background-image: url('https://bmw.scene7.com/is/image/BMW/colorswitch:3to1?fmt=webp-alpha&wid=1919&fit=constrain%2C1'); height: 70.1vh;background-size: contain;">
+        <div class="absolute inset-0 bg-black/40" ></div>
+        <div class=" absolute inset-0 bg-gradient-to-r from-black via-black/2  w-full md:w-2/4 lg:w-2/5 "></div>
+        
+        <div class="absolute" style="padding-top: 15%;padding-left: 8%;">
+          <h1 class="text-white" style="font-size: 38px;font-weight:250;padding-bottom: 19px;">THE FIRST EVER BMW i5</h1>
+          <p class="text-white" style="font-size: 18px;font-weight: 300;">Long Wheelbase</p>
+          <p class="text-white" style="font-size: 18px;font-weight: 300;padding-bottom: 18px;">Price starting at ₹79,60,000*</p>
+          <button type="button" class=" outline-1 outline-1  text-white  border-1 border-transparent hover:border-white font-medium rounded-sm text- px-19 py-3 hover:outline-white" style="cursor: pointer;">Know more</button>
+        </div>
+      </div>
+      </div>
+
+
+      <div style="padding-bottom: 40px;">
+      <div class="relative  inset-0 "
+        style="background-image: url('https://bmw.scene7.com/is/image/BMW/Homepage_x1_Desk_new:3to1?fmt=webp-alpha&wid=1919&fit=constrain%2C1'); height: 69.6vh;background-size: contain;">
+        <div class="absolute inset-0 bg-black/40" ></div>
+        <div class=" absolute inset-0 bg-gradient-to-r from-black via-black/2  w-full md:w-2/4 lg:w-2/5 "></div>
+        
+        <div class="absolute" style="padding-top: 15%;padding-left: 8%;">
+          <h1 class="text-white" style="font-size: 38px;font-weight:250;padding-bottom: 19px;">THE NEW X1</h1>
+          <p class="text-white" style="font-size: 18px;font-weight: 300;">Long Wheelbase</p>
+          <p class="text-white" style="font-size: 18px;font-weight: 300;padding-bottom: 18px;">Price starting at ₹49,90,000*</p>
+          <button type="button" class=" outline-1 outline-1  text-white  border-1 border-transparent hover:border-white font-medium rounded-sm text- px-19 py-3 hover:outline-white" style="cursor: pointer;">Know more</button>
+        </div>
+      </div>
+      </div>
+
+
+      <div style="padding-bottom: 50px;">
+      <div class="relative  inset-0 "
+        style="background-image: url('https://bmw.scene7.com/is/image/BMW/banner-x6-m60i:3to1?fmt=webp-alpha&wid=1919&fit=constrain%2C1'); height: 69.7vh;background-size: contain;">
+        <div class="absolute inset-0 bg-black/40" ></div>
+        <div class=" absolute inset-0 bg-gradient-to-r from-black via-black/2  w-full md:w-2/4 lg:w-2/5 "></div>
+        
+        <div class="absolute" style="padding-top: 15%;padding-left: 8%;">
+          <h1 class="text-white" style="font-size: 38px;font-weight:250;padding-bottom: 19px;">THE X6 M60i</h1>
+          <p class="text-white" style="font-size: 18px;font-weight: 300;">Long Wheelbase</p>
+          <p class="text-white" style="font-size: 18px;font-weight: 300;padding-bottom: 18px;">Price starting at ₹1,77,90,000*</p>
+          <button type="button" class=" outline-1 outline-1  text-white  border-1 border-transparent hover:border-white font-medium rounded-sm text- px-19 py-3 hover:outline-white" style="cursor: pointer;">Know more</button>
+          
+
+        </div>
+      </div>
+      </div>
+
+      <div class="flex" style="padding-bottom: 70px;">
+        <img src="https://bmw.scene7.com/is/image/BMW/5series-specialoffers:3to2?fmt=webp-alpha&wid=890&fit=constrain%2C1" alt="" width="700px" style="padding-left: 90px;padding-bottom: 40px;">
+        <div class="content-center" style="margin-right: 80px;">
+        <h1 style="padding-left: 66px;font-size: 30px;font-weight: 300;">BMW Special Offers.</h1>
+        <p style="padding-left: 66px;font-size: 20px;font-weight: 250;padding-top: 10px;">Monthly EMI starting from Rs.29,999/Month*. Check Out similar BMW finance offers available across the BMW range.</p>
+        <div class="group cursor-pointer inline-flex" style="padding-left: 10%;padding-top: 10px;">     
+        <button type="button" style="font-size: 16px;font-weight: 500;cursor: pointer;" class="group-hover:text-blue-600 inline-flex items-center  text-black bg-brand     shadow-xs font-medium  text-sm px-4 py-2.5 ">
+Know more
+<svg class="group-hover:text-blue-600 w-6 h-3.5 text-black-800 dark:text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
+    <path stroke="currentColor" stroke-linecap="square"  stroke-linejoin="miter" stroke-width="1.5" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
+</svg>
+</button>
+</div>   
+        </div>
+      </div>
+
+
+      
+    <div style="margin-left: 84px;">
+      <div class="flex flex-row">
+        <img src="https://di-uploads-pod16.dealerinspire.com/bmwofbridgeport/uploads/2022/06/myBMWapp_logo.png" alt="" width="56px">
+        <p style="padding-left: 35px;padding-top: 8px;font-weight: 150;">Stay up to date with the latest news from BMW.</p>
+        <div class="group cursor-pointer flex" style="padding-top: 5px;">
+        <button type="button" style="font-size: 15px;font-weight: 600;padding-top: 5px;" class="flex flex-row text-black   hover:text-blue-700  font-medium leading-rounded-base text-sm px-4 focus:outline-none">
+          Sign up
+          <svg  data-accordion-icon class="w-5 h-5 rotate-90 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="" height="" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 15 7-7 7 7"/></svg>
+        </button>
+        </div>
+      </div>
+    </div>
+
+    
+</section>
+
+
+<!-- footer -->
+
+
+
+<section>
+  <div class="flex relative"> 
+    <div class="absolute">
+      <h4 style="font-size: 50px;padding-top: 440%;"></h4>
+    </div>
+  </div>
+</section>
+
+
+
+<footer style="padding-top: 110%;">
+    <div class="mx-auto w-full max-w-screen-xl">
+      <div style="padding-left: 95px;" class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div class="flex flex-col">
+          <div>
+            <h2 style="font-size: 24px;font-weight: 280;" class="mb-6 text-sm text-heading ">Contact & Info</h2>
+            <ul class=" font-medium">
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class=" hover:text-blue-400">Customer support</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">Online Genius (FAQ)</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">Accident Support</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">Request for Offer</a>
+                </li>
+            </ul>
+            </div>
+
+            <div style="padding-top: 50px;">
+            <h2 style="font-size: 24px;font-weight: 280;" class="mb-6 text-sm text-heading ">Experience BMW</h2>
+            <ul class=" font-medium">
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class=" hover:text-blue-400">About us</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">BMW careers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">BMW.com</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">BMW Group</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">BMW Chennai Plant</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+
+
+        <div>
+        <div  style="padding-left: 28%;width: 120%;">
+            <h2 style="font-size: 24px;font-weight: 280;" class="mb-6 text-sm text-heading ">Assistance & Services</h2>
+            <ul class=" font-medium">
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class=" hover:text-blue-400">Book a Service Appointment</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">MY BMW App</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW ConnectedDrive</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">Warranties</a>
+                </li>
+            </ul>
+        </div>
+        <div style="padding-top: 50px;padding-left: 28%;">
+            <h2 style="font-size: 24px;font-weight: 280;" class="mb-6 text-sm text-heading ">Choose & Buy</h2>
+            <ul class=" font-medium">
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class=" hover:text-blue-400">Build your Own</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">New Cars Search</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">BMW Financial Services</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">BMW Offers</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 200;text-decoration: none;" class="hover:text-blue-400">Book a Test Drive</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+
+        <div>
+        <div style="padding-left: 50%;width: 200%;">
+            <h2 style="font-size: 24px;font-weight: 280;" class="mb-6 text-sm text-heading ">Models</h2>
+            <ul class=" font-medium">
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class=" hover:text-blue-400">BMW X series</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW 7 series</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW 5 series</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW 4 series</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW 3 series</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW 2 series</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW M series</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">BMW Protection Vehicles</a>
+                </li>
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class="hover:text-blue-400">GKL Cars</a>
+                </li>
+            </ul>
+        </div>
+        <div style="padding-left: 50%;padding-top: 50px;width: 200%;">
+            <h2 style="font-size: 24px;font-weight: 280;" class="mb-6 text-sm text-heading ">BMW Electric Cars</h2>
+            <ul class=" font-medium">
+                <li class="mb-4">
+                    <a href="#" style="font-size: 15px;font-weight: 100;text-decoration: none;" class=" hover:text-blue-400">BMW Electric Vehicles</a>
+                </li>
+            </ul>
+        </div>
+
+
+      </div>
+      </div>
+
+
+
+      <div class="flex mt-4 sm:justify-center md:mt-0 space-x-2 rtl:space-x-reverse " style="justify-content: end;padding-right: 10%;">
+          <a href="#" class="text-gray-700 hover:text-heading">
+                <img src="https://imgs.search.brave.com/ie_VLh-jov3-R30qMfZS841vIe3d6WqUlPv3y4XPqSk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zbWFs/bGltZy5wbmdrZXku/Y29tL3BuZy9zbWFs/bC8yMzYtMjM2MzI5/MF9jbGlja2FibGUt/ZmFjZWJvb2staWNv/bi1mYWNlYm9vay1p/Y29uLWdyZXktcG5n/LnBuZw" alt="" width="20px">
+            </a>
+            <a href="#" class="text-body hover:text-heading ms-5">
+                <img style="padding-top: 1px;" src="https://imgs.search.brave.com/SlCIorbuU5BwRbPKDhq90wfLXx0mwBT7IAI9AfQTnpI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2l0eXBuZy5jb20v/cHVibGljL3VwbG9h/ZHMvcHJldmlldy9s/aWdodC1zbW9vdGgt/Z3JheS1pbnN0YWdy/YW0tbG9nby1saWdo/dC03MDQwODE2OTQ2/ODc4OThoaGp4aXhq/N2ViLnBuZw" alt="" width="18px">
+            </a>
+            <a href="#" class="text-body hover:text-heading ms-5">
+            <img style="padding-top: 3px;" src="https://imgs.search.brave.com/rY3k4N2KQeuYxEV_fLUPPdaNdgpoulO-pb14_yFaiEs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wNy5o/aWNsaXBhcnQuY29t/L3ByZXZpZXcvNjcy/Lzk1My8xMDIveW91/dHViZS1wbGF5LWJ1/dHRvbi1jb21wdXRl/ci1pY29ucy1jbGlw/LWFydC15b3V0dWJl/LmpwZw" alt="" width="20px">
+            </a>
+            <a href="#" class="text-body hover:text-heading ms-5">
+                <img src="https://imgs.search.brave.com/AZTuTQPOb3ERcaYU-z_ILIjh9vrDUu3iJyGVrpJhsMA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS80OS00/OTQzNDJfbGlua2Vk/aW4taWNvbi1ncmV5/LWxldHRlcnMtbGlu/a2VkaW4tbG9nby1p/Y29uLWhkLnBuZw" alt="" width="20px">
+            </a>
+        </div>
+
+      
+
+
+
+
+    <div style="padding-left: 95px;padding-top: 4%;padding-bottom: 4%;" class="flex flex-row px-4 py-6 bg-neutral-secondary-soft md:flex md:items-center md:justify-between">
+      <div>
+        <span style="font-size: 16px;font-weight: 100;" class="text-sm text-body sm:text-center">Copyright © BMW AG 2026
+        </span>
+        <span style="font-size: 16px;font-weight: 100;padding-left: 25px;" class="text-sm text-body sm:text-center">Legal Disclaimer/Imprint
+        </span>
+        <span style="font-size: 16px;font-weight: 100;padding-left: 25px;" class="text-sm text-body sm:text-center">Privacy Policy
+        </span>
+        <span style="font-size: 16px;font-weight: 100;padding-left: 25px;" class="text-sm text-body sm:text-center">Cookie Policy
+        </span>
+        <span style="font-size: 16px;font-weight: 100;padding-left: 25px;" class="text-sm text-body sm:text-center">Contact Us
+        </span>
+        </div>
+        
+      </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+
+</html>
